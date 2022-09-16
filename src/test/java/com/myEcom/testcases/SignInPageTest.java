@@ -68,7 +68,7 @@ public class SignInPageTest extends BaseClass {
 	public void getTitle() {
 		
 		indexPagePom = new IndexPagePom();
-		signInPagePom = new SignInPagePom();
+		signInPagePom = indexPagePom.clickOnSignInButton();
 		createNewAccountPage = signInPagePom.setCreateAccountEmail("bcd@xyz.com");
 		String title = createNewAccountPage.validateTitle();
 		Assert.assertEquals(title, "Login - My Store");

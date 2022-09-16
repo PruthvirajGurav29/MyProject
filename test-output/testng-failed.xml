@@ -6,16 +6,4 @@
       <class name="com.myEcom.testcases.SignInPageTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.myEcom.testcases.SignInPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="getTitle"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.myEcom.testcases.SignInPageTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
