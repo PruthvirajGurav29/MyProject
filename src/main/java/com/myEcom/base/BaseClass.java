@@ -40,7 +40,7 @@ public class BaseClass {
 	@BeforeTest
 	public void readProp() throws IOException{
 		
-		FileInputStream fis = new FileInputStream(projectPath+"//config/config.properties");
+		FileInputStream fis = new FileInputStream(projectPath+"//config//confi.properties");
 		prop = new Properties();
 		prop.load(fis);
 	} 
