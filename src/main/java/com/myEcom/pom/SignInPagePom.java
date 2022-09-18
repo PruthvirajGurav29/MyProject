@@ -20,7 +20,7 @@ public class SignInPagePom extends BaseClass {
 	@FindBy(id = "email_create")
 	WebElement emailidCreate;
 	
-	@FindBy(xpath = "//input[@id='email_create']")
+	@FindBy(xpath = "//input[@name='email_create']")
 	WebElement submit;
 	
 	@FindBy(id = "newsletter-input")
@@ -54,7 +54,7 @@ public class SignInPagePom extends BaseClass {
 	public CreateNewAccountPage setCreateAccountEmail(String username){
 		
 		emailidCreate.sendKeys(username);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 		submit.click();
 		return new CreateNewAccountPage();
 	}

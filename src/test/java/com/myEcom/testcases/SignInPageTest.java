@@ -39,10 +39,10 @@ public class SignInPageTest extends BaseClass {
 	@AfterMethod
 	public void tearDown()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
-/*	@Test
+	@Test
 	public void login() throws EncryptedDocumentException, FileNotFoundException, IOException{
 		
 	Sheet sh =	data.getSheet(data.getExcelFile(), "login");
@@ -63,7 +63,7 @@ public class SignInPageTest extends BaseClass {
 		signInPagePom.setCreateAccountEmail((String)logindata.get("username"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-	} */
+	} 
 	@Test
 	public void getTitle() {
 		
@@ -72,8 +72,7 @@ public class SignInPageTest extends BaseClass {
 		createNewAccountPage = signInPagePom.setCreateAccountEmail("bcd@xyz.com");
 		String title = createNewAccountPage.validateTitle();
 		Assert.assertEquals(title, "Login - My Store");
-		
-		
-	}
+
+	} 
 
 }
